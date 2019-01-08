@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
+
+body{
+  height: 2481px;
+  background: linear-gradient(
+    to bottom,#392C22,#6F5449,#A56E50,#DAB55B,#F8F1E1);
+    -webkit-user-select: none;
+}
+
+.nav{
+  border-top:1px solid rgba(255, 255, 255, 0.596);
+  border-bottom:1px solid rgba(255, 255, 255, 0.596);
+
+  color:#fff;
+  display:flex;
+}
+.nav0{   
+  right:2vw;
+  height:4vw;
+  color:#fff;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+.nav0 a{
+  font-family:'Raleway', Arial, sans-serif,bold;
+  color:#fff;
+  font-size:1.5vw;
+  }
+.nav0 a:hover{
+  font-family:'Raleway', Arial, sans-serif,bold;
+  text-decoration:none;
+  color:#DAB55B;
+  font-size:2vw;
+}
+@media(max-width:987px){
+.img7{
+  display:none;
+}
+}
+
+.box1{
+  opacity:0.8;
+  background:url(../images/donut-3723751_1280.jpg);
+}
+
+.box1 h1{
+  color:#fff;
+  top: 40%;
+  left:20px;
+  position: absolute;
+  font-size:55px;
+  font-family:'Raleway', Arial, sans-serif,bold;
+}
+.img1{
+  z-index: 1;
+  position: relative;;
+}
+
+.img2{
+  z-index: 2;
+  position: relative;
+}
+.img3{
+  z-index: 2;
+  position: relative;
+}
+.img4{
+  z-index: 2;
+  position: relative;
+}
+.img5{
+  z-index: 2;
+  position: relative;
+}
+.img6{
+  z-index: 2;
+  position: relative;
+}
+.img7{
+  z-index: 0;
+}
+
+.imgshow{
+  display:none;
+}
+.text1{
+  height:300px;
+  padding-left:10vw;
+}
+
+.row1{
+  height:300px;
+  background-color: rgba(49, 48, 51, 0.479);
+  margin-bottom: 2px;
+}
+.row p{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin-top:30px;
+  font-size:20px;
+}
+.row1 p{
+  color:#fff;
+  font-size:1.5vw;
+  font-family:"微軟正黑體";
+}
+
+
+.footer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top:150px;
+  height:400px;
+  color: #392C22;
+  opacity:0.5 ;
+  font-family:'Rajdhani', sans-serif,bold;
+}
+
+.img7{
+  padding-top:50px;
+}
+
+
+
+
+
+
+
+

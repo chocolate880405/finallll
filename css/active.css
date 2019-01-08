@@ -1,0 +1,154 @@
+html{
+    background-color:#6F5449
+    ;
+}
+body{
+    width:1250px;
+    height:800px;
+    background-color: #6F5449 ;
+}
+
+.nav{
+    border-top:1px solid rgba(255, 255, 255, 0.596);
+    border-bottom:1px solid rgba(255, 255, 255, 0.596);
+    color:#fff;
+    display:flex;
+  }
+  .nav0{   
+    right:2vw;
+    height:4vw;
+    color:#fff;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+  .nav0 a{
+    font-family:'Raleway', Arial, sans-serif,bold;
+    color:#fff;
+    font-size:1.5vw;
+    }
+  .nav0 a:hover{
+    font-family:'Raleway', Arial, sans-serif,bold;
+    text-decoration:none;
+    color:#DAB55B;
+    font-size:2vw;
+  }
+
+.nav{
+    background-color:#392C22;
+}
+
+.row1{
+    height:200px;  
+    
+}
+.ground{
+    height:300px; 
+    display:flex;
+    justify-content:space-around;
+}
+h1{
+    color:#DAB55B;
+
+
+    font-family:"微軟正黑體";
+}
+.abc .a{
+    color:#fff;
+}
+a{
+    color:#fff;
+font-size:20px;
+
+font-family:"微軟正黑體";
+}
+
+.yel{
+    width:300px;
+    height:300px;
+    position:relative; 
+}
+.whi{
+    width:300px;
+    height:300px; 
+    position:relative;
+}
+.cat{
+    width:300px;
+    height:300px; 
+    position:relative;
+}
+.run{
+    width:300px;
+    height:300px; 
+    position:relative;
+}
+
+
+.yel img{ position:absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+ }
+.yel img:last-child:hover{
+     /* 滑入時第一張透明度設0 */
+      opacity:0;}
+.whi img{ position:absolute;
+        /* 淡出淡入效果2秒 */
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+       }
+.whi img:last-child:hover{
+           /* 滑入時第一張透明度設0 */
+            opacity:0;}
+.cat img{ position:absolute;
+                /* 淡出淡入效果2秒 */
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+               }
+.cat img:last-child:hover{
+                   /* 滑入時第一張透明度設0 */
+                    opacity:0;}
+.run img{ position:absolute;
+                        /* 淡出淡入效果2秒 */
+                        -webkit-transition: opacity 1s ease-in-out;
+                        -moz-transition: opacity 1s ease-in-out;
+                        -o-transition: opacity 1s ease-in-out;
+                        transition: opacity 1s ease-in-out;
+                       }
+.run img:last-child:hover{
+                           /* 滑入時第一張透明度設0 */
+                            opacity:0;}
+ @media screen and (max-width:768px){
+     a{
+        display:block;/*统一转化为块级元素*/  
+        overflow:hidden;  
+        width:0;  
+        height:0;  
+     }
+     h1{
+        color:#FFFFFF;
+        font-weight:bold;
+        position:absolute;
+        left:40%;/**左边50%**/
+     }
+input{
+        display:none;/*统一转化为块级元素*/  
+          
+        width:0;  
+        height:100px; 
+}
+.abc{
+height:100px;
+}
+
+    
+   
+}

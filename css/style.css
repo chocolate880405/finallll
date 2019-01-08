@@ -1,0 +1,60 @@
+html{
+    background-color: #392C22;
+}
+
+.picture{
+
+    background-color:#392C22;
+    position: absolute;
+}
+.rdoor{
+  position: absolute;
+  top: 26%;
+  right: 46%;
+  width: 165px;
+  height: 250px;
+ 
+  animation: pulse 2s infinite;
+  }
+  @media(max-width:1024px){
+    .rdoor{
+        left:50vw;
+    }
+
+}
+ 
+ @media(max-width:768px){
+     .rdoor{
+         left:66vw;
+     }
+
+ }
+ @media(max-width:411px){
+    .rdoor{
+        left:100px;
+    }
+
+}
+  @media(max-width:360px){
+      .rdoor{
+          top:145px;
+          left:145vw;
+      }
+      
+  }
+  @keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px 2px #fff;
+    }
+    50% {
+        box-shadow: 0 0 8px 10px #fffd74;
+    }
+    100% {
+        box-shadow: 0 0 8px 2px #fff;
+    }
+}
+
+
+.rdoor:hover{
+  opacity: 0.0;
+}

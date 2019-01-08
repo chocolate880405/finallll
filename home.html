@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eden Cafe</title>
+    <link rel="stylesheet" href="../final/css/home.css">
+    <link rel="stylesheet" href="../final/js/js.js">
+
+    <link rel="icon" href="./images/icon/takeaway-coffee.png" type="image/x-icon" />
+
+</head>
+<body>
+    <script type="text/javascript">
+            //隨機播放陣列中指定的圖檔
+        var jsImg = new Array("./images/cafe.jpg","./images/cafe2.jpg","./images/dog.jpg");
+                        //設定每兩秒執行一次randomImg() ，此行要在 function 之外
+                    setInterval("randomImg()",3000);
+                    function randomImg(){
+                        //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
+                    var imgIndex = Math.floor(Math.random()*jsImg.length);
+                     document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=1150 height=390>";
+                    }       
+                
+            </script>
+            <script type="text/javascript">
+                 //循序播放陣列中指定的圖檔
+                     var jsImg = new Array("./images/cafe.jpg","./images/cafe2.jpg","./images/dog.jpg");
+                    var jsImg_len = jsImg.length;  // 圖檔數量
+                        // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+                    var i=1;                       //起始照片  2 為 003.jpg
+                        //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+                    setInterval("sequentialImg()",3000);
+                    function sequentialImg(){  //循序播放
+                        document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[i]+"' width=1150 height=390>";        
+                            i++;
+                            if(i>=jsImg_len)  i=0;
+                        }
+                        </script>
+
+    
+    <div class="container one">
+        <div class="row top">
+            <div class="col-md-6"> 
+                <a href="../final/index.html"><i class="fas fa-home fa-2x" style="color: #DAB55B" width=50px></i></a>
+               
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+        <div class="row">
+
+            <div id="div" class="col-md-12 img">
+                <div id="my_div" class="carousel"></div>
+                <div class="text0">
+                    <h1>Eden Cafe</h1>
+                    <h3>- Healing - Relaxing - Comforting - </h3>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <nav class="container two">
+            <div class="row nav">
+                <div class="col-md-3 nav0">
+                    <a href="./pet.html">PET</a>
+                </div>
+                <div class="col-md-3 nav0">
+                    <a href="./menu.html">MENU</a>
+                </div>
+                <div class="col-md-3 nav0">
+                    <a href="./active.html">ACTIVE</a>
+                </div>
+                <div class="col-md-3 nav0">
+                    <a href="./content.html">CONTACT</a>
+                </div>
+            </div>
+    </nav>
+    
+    <div class="container three">
+        <div class="row space"></div>
+        <div class="row space"></div>
+        <div class="row row0">
+            <div class="col-md-6"> 
+                <p> <i class="fas fa-paw fa-1x" style="color: #DAB55B" width='50px'></i> Our Story</p>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row row0">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 text1">
+                <p>Eden Cafe 的起因是場偶然。<br>一切的源頭來自一場邂逅，一場平凡的對話。當言語交錯，一句一語逐漸建構真實。<br>當邂逅來訪，靈動生氣填充平淡日常。於是，偶然成了必然。</p>
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+        <div class="row space"></div>
+        <div class="row space"></div>
+        <div class="row row0">
+                <div class="col-md-6"> 
+                    <p> <i class="fas fa-paw fa-1x" style="color: #DAB55B"></i> Concept</p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4"></div>
+        </div>
+
+        
+        <div class="row">
+                <figure class="snip1190">
+                        <img src="./images/02.jpg" alt="sample64"/>
+                        <figcaption>
+                          <div class="square">
+                            <div></div>
+                          </div>
+                          <h2>Heal<span> ing</span></h2>
+                          <p>讓活潑可愛的毛小孩來治癒身心</p>
+                        </figcaption>
+                        
+                </figure>
+               
+                <figure class="snip1190">
+                        <img src="./images/01.jpg" alt="sample62"/>
+                        <figcaption>
+                          <div class="square">
+                            <div></div>
+                          </div>
+                          <h2>Relax<span> ing</span></h2>
+                          <p>偶爾放慢生活步調，來享受輕鬆的氣氛</p>
+                        </figcaption>
+                        
+                </figure>
+                <figure class="snip1190">
+                        <img src="./images/03.jpg" alt="sample62"/>
+                        <figcaption>
+                          <div class="square">
+                            <div></div>
+                          </div>
+                          <h2>Comfort<span> ing</span></h2>
+                          <p>在寒冷時，不妨來杯熱可可暖和吧!</p>
+                        </figcaption>
+                        
+                </figure>
+        </div>
+       
+    </div>
+    <div class="container">
+    <div class="row space"></div>
+    <div class="row space"></div>
+</div>
+    <div class="container">
+       <div class="row footer">
+           
+        <div class="col-md-2">
+            <a href="#"><i class="fab fa-facebook-square fa-2x" style="color: #DAB55B"></i></a>
+            &nbsp
+            <a href="#"><i class="far fa-envelope fa-2x" style="color: #DAB55B"></i></a>
+          
+            &nbsp
+            <a href="#"><i class="fab fa-instagram fa-2x" style="color: #DAB55B"></i></a>
+        </div><div class="col-md-10"></div>
+    </div>    
+    
+</div>
+</div>
+
+
+</body>
+</html>

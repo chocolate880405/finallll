@@ -1,0 +1,39 @@
+html{
+ -webkit-user-select: none;
+}
+body{
+  background-image: url('../images/fl.jpg');
+ 
+}
+
+.nav{
+    border-top:1px solid rgba(255, 255, 255, 0.596);
+    border-bottom:1px solid rgba(255, 255, 255, 0.596);
+  
+    color:#fff;
+    display:flex;
+  }
+.nav0{   
+    right:2vw;
+    height:4vw;
+    color:#fff;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+.nav0 a{
+    font-family:'Raleway', Arial, sans-serif,bold;
+    color:#fff;
+    font-size:1.5vw;
+    }
+.nav0 a:hover{
+    font-family:'Raleway', Arial, sans-serif,bold;
+    text-decoration:none;
+    color:#DAB55B;
+    font-size:2vw;
+  }
+
+.row{
+    background-color:#392C22;
+}
